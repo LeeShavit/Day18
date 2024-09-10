@@ -22,6 +22,8 @@ h1{
     background-color: teal;
     border-radius: 50%;
     margin: auto;
+
+    transition: 1s;
 }
 
 .diameter{
