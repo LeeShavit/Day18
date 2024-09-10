@@ -1,20 +1,20 @@
 'use strict'
 
 var increment = 50
-var gDiameter = 100
+var gDiameters = [100,100]
 
-function onBallClick(elBall) {
+function onBallClick(elBall,maxDiameter,i) {
     increment= getRandomInt(20,61)
-    gDiameter = gDiameter < 400 ? gDiameter+increment : 100
-    elBall.style.height = gDiameter + 'px'
-    elBall.style.width = gDiameter + 'px'
-    updateDiameter()
+    gDiameters[i] = gDiameters[i] < maxDiameter ? gDiameters[i]+increment : 100
+    elBall.style.height = gDiameters[i] + 'px'
+    elBall.style.width = gDiameters[i] + 'px'
+    updateDiameterDOM(i)
     changeBallRandColor(elBall)
 }
 
-function updateDiameter() {
-    const elDiameter = document.querySelector('.diameter')
-    elDiameter.innerText = gDiameter + 'px'
+function updateDiameterDOM(i) {
+    const elDiameter = document.querySelector(`.ball${i+1}`)
+    elDiameter.innerText = gDiameters[i] + 'px'
 }
 
 function changeBallRandColor(elBall){
