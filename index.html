@@ -3,11 +3,15 @@
         <title>Playing with Git</title>
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
+    <body onload="onInit()">
         <h1 >The Ball Game</h1>
         <div class="ball ball1" onclick="onBallClick(this,300,0)">100px</div>
-        <div class="ball ball2" onclick="onBallClick(this,500,1)">100px</div>
-        <div class="ball ball3" onclick="onBallSwap()">100px</div>
+        <div class="ball ball2" onclick="onBallClick(this,300,0)">100px</div>
+        <div class="ball ball3" onclick="onBallSwap()">Swap</div>
+        <div class="ball ball4" onclick="onBallReduce()">Reduce</div>
+        <div class="ball ball5" onclick="onChangeBackground()">Party</div>
+        <div class="ball ball6" onclick="onResetGame()" onmouseenter="onStartInterval()" onmouseleave="onEndInterval()">Reset</div>
+
         <script src="js/utils.js"></script>
         <script src="js/main.js"></script>
     </body>

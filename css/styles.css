@@ -30,7 +30,9 @@ h1{
     width: max-content;
     font-weight: bold;
 }
-
+.ball1{
+    background-color: lightblue;
+}
 .ball2{
     background-color: pink;
 }
