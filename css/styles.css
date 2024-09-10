@@ -4,7 +4,7 @@
 
 body{
     background-color: black;
-    text-align: center;
+    font-size: 22px;
 }
 
 h1{
@@ -12,12 +12,19 @@ h1{
 }
 
 .ball{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 100px;
     height: 100px;
 
-    padding-top: 20px;
     background-color: teal;
     border-radius: 50%;
     margin: auto;
+}
 
+.diameter{
+    width: max-content;
+    font-weight: bold;
 }
