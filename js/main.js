@@ -8,9 +8,14 @@ function onBallClick(elBall) {
     elBall.style.height = gDiameter + 'px'
     elBall.style.width = gDiameter + 'px'
     updateDiameter()
+    changeBallRandColor(elBall)
 }
 
 function updateDiameter() {
     const elDiameter = document.querySelector('.diameter')
     elDiameter.innerText = gDiameter + 'px'
+}
+
+function changeBallRandColor(elBall){
+    elBall.style.backgroundColor= getRandomColor()+''
 }
