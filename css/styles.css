@@ -5,3 +5,11 @@ body{
 h1{
     color: white;
 }
+
+.ball{
+    width: 100px;
+    height: 100px;
+
+    background-color: teal;
+    border-radius: 50%;
+}
