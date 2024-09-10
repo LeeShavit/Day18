@@ -8,9 +8,22 @@ body{
 }
 
 h1{
+    position: relative;
     color: white;
 }
 
+.balls-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.bottom{
+    position: fixed;
+    bottom: 100px;
+    left: 200px;
+}
 .ball{ 
     display: flex;
     align-items: center;
@@ -21,7 +34,6 @@ h1{
 
     background-color: teal;
     border-radius: 50%;
-    margin: auto;
 
     transition: 1s;
 }
@@ -35,4 +47,14 @@ h1{
 }
 .ball2{
     background-color: pink;
+    
+}
+
+button{
+    position: absolute;
+    right: 0;
+}
+
+.undo{
+    right: 50px;
 }

@@ -1,18 +1,28 @@
 <html>
-    <head>
-        <title>Playing with Git</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body onload="onInit()">
-        <h1 >The Ball Game</h1>
+
+<head>
+    <title>Playing with Git</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onload="onInit()">
+    <h1>The Ball Game
+        <button class="undo" onclick="onUndo()">↩️</button>
+        <button class="redo" onclick="onRedo()">↪️</button>
+    </h1>
+    <div class="balls-container">
         <div class="ball ball1" onclick="onBallClick(this,300,0)">100px</div>
         <div class="ball ball2" onclick="onBallClick(this,300,0)">100px</div>
+    </div>
+    <div class="balls-container bottom">
         <div class="ball ball3" onclick="onBallSwap()">Swap</div>
         <div class="ball ball4" onclick="onBallReduce()">Reduce</div>
         <div class="ball ball5" onclick="onChangeBackground()">Party</div>
-        <div class="ball ball6" onclick="onResetGame()" onmouseenter="onStartInterval()" onmouseleave="onEndInterval()">Reset</div>
+        <div class="ball ball6" onclick="onResetGame()" onmouseenter="onStartInterval()" onmouseleave="onEndInterval()">
+            Reset</div>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
 
-        <script src="js/utils.js"></script>
-        <script src="js/main.js"></script>
-    </body>
 </html>
