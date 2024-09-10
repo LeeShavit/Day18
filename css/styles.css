@@ -53,8 +53,17 @@ h1{
 button{
     position: absolute;
     right: 0;
+    top: 30px;
 }
 
 .undo{
     right: 50px;
+}
+
+.enable-undo{
+    top:0px;
+}
+
+.hide{
+    display: none;
 }
